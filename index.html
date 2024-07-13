@@ -1,97 +1,109 @@
 <!DOCTYPE html>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-  }
-  .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #000000; /* White background */
-    color: #fff; /* Black text */
-  }
-  .hero-text {
-    width: 50%;
-  }
-  .hero-image {
-    width: 50%;
-    /* Add your image path below */
-    background-image: url('https://media.istockphoto.com/id/178740022/photo/female-soccer-player.jpg?s=612x612&w=0&k=20&c=Uk2fiRo0u617thR-HHVEV4SOGUjR3xLQ-ty5o8zNQO0=');
-    background-size: cover;
-    height: 300px; /* Adjust as needed */
-  }
-   <style>
-    
-/* Style for h1 */
-h1 {
-    color: #FF0000; /* Red color */
-    font-size: 35px; /* Larger font size */
-    font-weight: bold; /* Bold font weight */
-}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Overview</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif; /* Set a common font */
+        }
 
-/* Style for h2 */
-h2 {
-    color: #FF0000; /* Blue color */
-    font-size: 28px; /* Slightly smaller font size */
-    font-weight: bold; /* Bold font weight */
-}
+        /* Style for h1 */
+        h1 {
+            color: #FF0000; /* Red color */
+            font-size: 35px; /* Larger font size */
+            font-weight: bold; /* Bold font weight */
+        }
 
-/* Style for h3 */
-h3 {
-    color: #0000FF; /* Blue color */
-    font-size: 28px; /* Slightly smaller font size */
-    font-weight: bold; /* Bold font weight */
-}
+        /* Style for h2 */
+        h2 {
+            color: #FF0000; /* Red color */
+            font-size: 28px; /* Slightly smaller font size */
+            font-weight: bold; /* Bold font weight */
+        }
 
-/* Style for h4 */
-h4 {
-    color: #FF9900; /* Orange color */
-    font-size: 28px; /* Slightly Smaller font size */
-    font-weight: bold; /* Bold font weight */
-}
+        /* Style for h3 */
+        h3 {
+            color: #0000FF; /* Blue color */
+            font-size: 28px; /* Slightly smaller font size */
+            font-weight: bold; /* Bold font weight */
+        }
 
-/* Style for h5 */
-h5 {
-    color: #9933CC; /* Purple color */
-    font-size: 28px; /* Slightly Smaller font size */
-    font-weight: bold; /* Bold font weight */
-}
+        /* Style for h4 */
+        h4 {
+            color: #FF9900; /* Orange color */
+            font-size: 28px; /* Slightly Smaller font size */
+            font-weight: bold; /* Bold font weight */
+        }
 
-/* Style for h6 */
-h6 {
-    colour:#FFC0CB; /*HEX */
-    font-size: 28px; /* Slightly Smaller font size */
-    font-weight: bold; /*Bold font-weight */
-}
+        /* Style for h5 */
+        h5 {
+            color: #9933CC; /* Purple color */
+            font-size: 28px; /* Slightly Smaller font size */
+            font-weight: bold; /* Bold font weight */
+        }
 
-/* Style for h7 */
-h7 {
-    colour:#000000; /*White colour */
-    font-size: 28px; /* Slightly Smaller font size */
-    font-weight: bold; /*Bold font-weight */
-}
+        /* Style for h7 */
+        h7 {
+            color: black; /* Black color */
+            font-size: 28px; /* Slightly Smaller font size */
+            font-weight: bold; /* Bold font weight */
+            background-color: cyan; /* Cyan background color */
+            padding: 10px; /* Padding for spacing */
+            border-radius: 10px; /* Rounded corners */
+        }
 
-/* Style for h8 */
-h8 {
-    colour:#000000; /*White colour */
-    font-size: 28px; /* Slightly Smaller font size */
-    font-weight: bold; /*Bold font-weight */
-}
-}
-    
-h1 {
-    font-size: 35px;
-}
+        /* Style for h8 */
+        h8 {
+            color: black; /* Black color */
+            font-size: 28px; /* Slightly Smaller font size */
+            font-weight: bold; /* Bold font weight */
+            background-color: cyan; /* Cyan background color */
+            padding: 10px; /* Padding for spacing */
+            border-radius: 10px; /* Rounded corners */
+        }
 
-h2, h3, h4, h5, h6, h7, h8 {
-    font-size: 28px;
-}
-    .highlighted-line {
-        background-color: yellow;
-        display: block;
-    }
-    
+        /* Style for paragraphs */
+        p {
+            font-size: 16px; /* Normal font size */
+            line-height: 1.6; /* Line height for readability */
+            margin-bottom: 15px; /* Bottom margin for spacing */
+        }
+
+        /* Image styling */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px; /* Rounded corners */
+            margin-bottom: 15px; /* Bottom margin for spacing */
+        }
+
+        /* Container for text and image */
+        .image-text-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        /* Text and image alignment within container */
+        .image-text-container .text, .image-text-container .image {
+            width: 45%;
+        }
+
+        /* Adjusting alignment for smaller screens */
+        @media screen and (max-width: 768px) {
+            .image-text-container {
+                flex-direction: column;
+            }
+            .image-text-container .text, .image-text-container .image {
+                width: 100%;
+            }
+        }
+
 .closing-message {
     background-color: #ffd700; /* Yellow background color */
     padding: 20px; /* Add padding for spacing */
@@ -99,70 +111,127 @@ h2, h3, h4, h5, h6, h7, h8 {
     text-align: center; /* Center-align the text */
     font-weight: bold; /* Make the text bold */
 }
-</style>
-<html>
-<body>
+    </style>
+</head>
 <div class="hero">
-  <div class="hero-text">
-    <h1>UNLEASH YOUR INNER ATHLETE</h1>
-    <p>WHERE EVERY VICTORY BEGINS</p>
-    <p>Explore the exhilarating world of sports where passion meets performance. Join us for action-packed thrills and unforgettable.</p>
-  
-  </div>
-  <div class="hero-image">
-  </div>
+        <div class="hero-text">
+          <h1>UNLEASH YOUR INNER ATHLETE</h1>
+          <p>WHERE EVERY VICTORY BEGINS</p>
+          <p>Explore the exhilarating world of sports where passion meets performance. Join us for action-packed thrills and unforgettable.</p>
+        
+        </div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0wUklQtdjqqpX0iWFs7NcpTqvPnL8BygqkdwllHw9FofxhO2aNae_wnbmjJVxy_fHrBw&usqp=CAU"
+        alt="Hero Image"> 
+      </div>
+<body>
+
+    <h1>Welcome To My Website</h1>
+    
+    <div class="image-text-container">
+        <div class="text">
+            <h2 style="background-color:black;">Sports</h2>
+            <p>Sports play a crucial role in promoting physical fitness, mental well-being, and social interaction. Engaging in sports activities not only improves cardiovascular health and muscle strength but also fosters teamwork, discipline, and resilience. From team sports like football and basketball to individual pursuits such as running and swimming, there's a diverse range of options to suit everyone's interests and abilities. Additionally, sports provide opportunities for camaraderie and friendship as athletes come together to compete, challenge themselves, and celebrate achievements. Whether it's on the field, court, or track, the universal language of sports transcends boundaries, uniting people from all walks of life in the pursuit of excellence and personal growth.</p>
+        </div>
+        <div class="image">
+            <img src="https://th.bing.com/th/id/OIG4.CDQfV47rx3NAbnpmOXUM?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="General Sports">
+        </div>
+    </div>
+
+    <div class="image-text-container">
+        <div class="image">
+            <img src="https://th.bing.com/th/id/OIG3.rbm4nM1IF7vvTdkKKbK_?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Football">
+        </div>
+        <div class="text">
+            <h3 style="background-color:black;">Football</h3>
+            <p>Football, also known as soccer in some countries, is the world's most popular sport, captivating millions of fans across the globe. From the thrill of the World Cup to the excitement of local leagues, football unites people of all ages, backgrounds, and cultures. The game is characterized by its fast pace, skillful maneuvers, and moments of pure brilliance on the field. Whether it's the precision of a well-executed pass, the exhilaration of a perfectly timed goal, or the drama of a penalty shootout, football has an unmatched ability to stir emotions and create unforgettable memories. Beyond the sport itself, football fosters camaraderie, teamwork, and sportsmanship, teaching valuable life lessons both on and off the pitch. As players chase their dreams and fans cheer from the sidelines, football continues to inspire and unite communities around the world.</p>
+        </div>
+    </div>
+
+    <div class="image-text-container">
+        <div class="text">
+            <h4 style="background-color:black;">Cricket</h4>
+            <p>Cricket, often referred to as a gentleman's game, holds a special place in the hearts of millions worldwide. Originating in England in the 16th century, cricket has evolved into one of the most popular sports, especially in countries like India, Australia, England, Pakistan, and the West Indies. Played on a large oval-shaped field, cricket involves two teams of eleven players each, aiming to score runs and dismiss opponents through batting, bowling, and fielding. The game is known for its unique terminology, including terms like wicket, boundary, and century. From the excitement of a Test match lasting five days to the fast-paced action of a Twenty20 (T20) game, cricket offers a variety of formats to suit different preferences. Major tournaments such as the ICC Cricket World Cup and the Indian Premier League (IPL) attract massive audiences and showcase the talent and passion of players from around the globe. With its rich history, strategic gameplay, and passionate fan base, cricket continues to unite people and inspire generations.</p>
+        </div>
+        <div class="image">
+            <img src="https://th.bing.com/th/id/OIG4.oexuc4hRSfP_NhfMT7bO?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Cricket(England vs India)">
+        </div>
+    </div>
+
+    <div class="image-text-container">
+        <div class="image">
+            <img src="https://th.bing.com/th/id/OIG4.Kmy3C.hQh368QuzWLCZD?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Sports Business">
+        </div>
+        <div class="text">
+            <h5 style="background-color:black;">Sports Business and Industry Insights</h5>
+            <p>Sports business and industry insights delve into the complex and dynamic world of sports management, marketing, and economics. This field encompasses a broad range of activities, including the commercialization of sports, sponsorship deals, media rights, and the financial aspects of running sports organizations. With the rise of global sports events, leagues, and franchises, the sports industry has become a major economic powerhouse, generating billions in revenue annually. Sports marketing strategies play a crucial role in brand promotion, fan engagement, and merchandise sales, while sponsorships and endorsements provide athletes and teams with vital financial support. Moreover, the evolution of sports media has transformed how fans consume sports content, with digital platforms and streaming services offering new opportunities for engagement and monetization. Understanding the intricacies of the sports business landscape is essential for navigating this ever-evolving industry and capitalizing on emerging trends and opportunities.</p>
+        </div>
+    </div>
+            <h7 <style="background-color:black;"> Top 10 International Sports</h7>
+            <p><b>1. Football (Soccer):</b> Football is the most popular sport globally, with billions of fans and participants worldwide. It is played in nearly every country and boasts massive international tournaments such as the FIFA World Cup.</p>
+
+            <p><b>2. Cricket:</b> Cricket is immensely popular in countries such as India, Pakistan, Australia, England, and the West Indies. It has a large following across Asia, Africa, and parts of Europe, with major international competitions like the ICC Cricket World Cup.</p>
+
+            <p><b>3. Basketball:</b> Basketball enjoys widespread popularity, particularly in the United States and countries across Europe and Asia. The NBA (National Basketball Association) is one of the most prestigious basketball leagues globally.</p>
+
+            <p><b>4. Tennis:</b> Tennis is a widely played and watched sport, with major tournaments like Wimbledon, the US Open, the French Open, and the Australian Open drawing millions of viewers each year.</p>
+
+            <p><b>5. Golf:</b> Golf is popular in many countries, with significant events such as The Masters, the U.S. Open, The Open Championship, and the PGA Championship attracting global attention.</p>
+
+            <p><b>6. Rugby:</b> Rugby is particularly popular in countries like New Zealand, Australia, South Africa, England, and France. The Rugby World Cup is one of the most prestigious international rugby tournaments.</p>
+
+            <p><b>7. Athletics (Track and Field):</b> Athletics includes a wide range of track and field events such as sprints, long-distance running, jumping, throwing, and racewalking. The Olympic Games feature athletics as one of its marquee events.</p>
+
+            <p><b>8. Formula 1:</b> Formula 1 racing is a premier auto racing series that attracts fans from around the world. Races take place on circuits in multiple countries, with the F1 World Championship being the pinnacle of motor racing.</p>
+
+            <p><b>9. Swimming:</b> Swimming is a popular sport with international competitions like the Olympics and the FINA World Championships showcasing top swimmers from around the globe.</p>
+
+            <p><b>10. Cycling:</b> Cycling encompasses various disciplines such as road cycling, track cycling, mountain biking, and BMX. Major events like the Tour de France and the UCI Road World Championships draw significant attention.</p>
+       
+    <!-- Sports for Kids -->
+    <div class="image-text-container">
+        <div class="text">
+            <h8>Sports for Kids</h8>
+            <p>Sports for kids offer more than just physical activity; they provide a platform for holistic development. Engaging in sports activities from an early age helps children build fundamental skills such as teamwork, discipline, and resilience. Through participation in sports, kids learn valuable lessons about fair play, sportsmanship, and respecting others. Moreover, sports encourage children to lead active lifestyles, promoting physical fitness and overall well-being. Whether it's kicking a soccer ball, swinging a racket, or running on a track, sports activities foster confidence, social interaction, and a sense of achievement in children. By introducing kids to sports, we empower them to discover their passions, develop lifelong healthy habits, and unleash their full potential, both on and off the field.</p>
+        </div>
+        <div class="image">
+            <img src="https://th.bing.com/th/id/OIG3.zdz9UlzghoF8G8vrTKeH?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Kids Sports">
+        </div>
+    </div>
+
+    <div class="closing-message">
+        Thank you for exploring the world of sports with us. Stay active, stay inspired, and keep following your passion for sports!
+    </div>
+<!-- Footer -->
+<div class="footer">
+    <div class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Drop us a line!</p>
+        <form>
+            <input type="text" name="name" placeholder="Name"><br>
+            <input type="email" name="email" placeholder="Email*" required><br>
+            <textarea name="message" rows="5" placeholder="Message"></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <div class="who-we-are-section">
+        <h2>Who We Are at MDShareK32.com</h2>
+        <div class="section">
+            <img src="https://img1.wsimg.com/isteam/stock/32343/:/rs=w:365,h:365,cg:true,m/cr=w:365,h:365/qt=q:34" alt="Our Story"> <!-- Image for Our Story -->
+            <h3>Our Story</h3>
+            <p>At mdsharek32.com, our passion for sports started at a young age. We wanted to create a website that would allow us to share our love for sports with others. Over time, we grew and expanded our inventory to provide our audience with high-quality content and products.</p>
+        </div>
+        <div class="section">
+            <img src="https://img1.wsimg.com/isteam/stock/12299/:/cr=t:0%25,l:13.53%25,w:72.95%25,h:100%25/rs=w:365,h:365,cg:true/qt=q:34" alt="Our Philosophy"> <!-- Image for Our Philosophy -->
+            <h3>Our Philosophy</h3>
+            <p>At mdsharek32.com, we believe that sports have the power to change lives. We believe in hard work, dedication, and a never-give-up attitude, and we strive to embody these values in everything we do.</p>
+        </div>
+        <div class="section">
+            <img src="https://img1.wsimg.com/isteam/stock/32613/:/cr=t:0%25,l:16.67%25,w:66.67%25,h:100%25/rs=w:365,h:365,cg:true/qt=q:34" alt="Our Team"> <!-- Image for Our Team -->
+            <h3>Our Team</h3>
+            <p>Our team at mdsharek32.com is made up of sports enthusiasts who are passionate about helping athletes succeed. We are dedicated to providing exceptional audience service and helping our audience achieve their goals.</p>
+        </div>
+    </div>
 </div>
-<h1>Welcome To My Website</h1>
-      <h2 style="background-color:black;">Sports</h2>
-<img src="https://th.bing.com/th/id/OIP.wkkd1hrLCYqEMO_2Bx50IQHaEK?w=277&amp;h=180&amp;c=7&amp;r=0&amp;o=5&amp;dpr=1.3&amp;pid=1.7" /> 
-<p>Sports play crucial role in promoting physical fitness,mental well-being,and social interaction.Engaging in sports activities not only improves cardivosculer health and muscule strength  but also fosters teamwork,discipline,and resilience.From team sports like football and basketball to individual persuits such as running and swimming,there's a diverse range of options to suits everyone's interests and abilities.  Additionally,sports provide opportunities for camaraderie and friendship as athletes come together to complete,challenges themselves, and celebrate achievements.Whether it's on  the feild,court,or track, the universal  language of sports transcends boundaries,uniting people from  all walks of life in the pursuit of excellence and personal growth. </p>
-<p><mark>There are 2 most populer sports of all time:</mark> 
-<p>1.<mark>Football.</mark></p>
-<p>2.<mark>Cricket.</mark></p>
-<h3 style="background-color:black;">Football</h3>
-      
-<p> Football, also known as soccer in some countries, is the world's most popular sport, captivating millions of fans across the globe. From the thrill of the World Cup to the excitement of local leagues, football unites people of all ages, backgrounds, and cultures. The game is characterized by its fast pace, skillful maneuvers, and moments of pure brilliance on the field. Whether it's the precision of a well-executed pass, the exhilaration of a perfectly timed goal, or the drama of a penalty shootout, football has an unmatched ability to stir emotions and create unforgettable memories. Beyond the sport itself, football fosters camaraderie, teamwork, and sportsmanship, teaching valuable life lessons both on and off the pitch. As players chase their dreams and fans cheer from the sidelines, football continues to inspire and unite communities around the world.</p>
-<img src="https://media.gettyimages.com/id/975523656/photo/sochi-russia-cristiano-ronaldo-of-portugal-scores-a-free-kick-for-his-teams-third-goal-during.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=XkGAq3UaGZ4WbD4KZdWhc_MagytHPtgeA-TtXnBxgyw=" 
-alt="A football player is making a free kick" />
-<h4 style="background-color:black;">Cricket</h4>
-<p>Cricket, often referred to as a gentleman's game, holds a special place in the hearts of millions worldwide. Originating in <mark>England in the 16th century</mark>, cricket has evolved into one of the most popular sports, especially in countries like India, Australia, England, Pakistan, and the West Indies. Played on a large oval-shaped field, cricket involves two teams of eleven players each, aiming to score runs and dismiss opponents through batting, bowling, and fielding. The game is known for its unique terminology, including terms like wicket, boundary, and century. From the excitement of a Test match lasting five days to the fast-paced action of a <mark>Twenty20 (T20)</mark> game, cricket offers a variety of formats to suit different preferences. Major tournaments such as the ICC Cricket World Cup and the Indian Premier League (IPL) attract massive audiences and showcase the talent and passion of players from around the globe. With its rich history, strategic gameplay, and passionate fan base, cricket continues to unite people and inspire generations. </p>
-<img src="https://th.bing.com/th?id=OIP.jlJKzMI_kPTmSrGyrseRtgHaER&amp;w=329&amp;h=189&amp;c=8&amp;rs=1&amp;qlt=90&amp;o=6&amp;dpr=1.3&amp;pid=3.1&amp;rm=2" 
- alt="A test match" />
-      
-<h5 style="background-color:black;">Sports History and Milestone</h5>
-<p>Sports history is a captivating journey through time, marked by remarkable milestones that have shaped the world of athletics. From ancient civilizations to the modern era, sports have played a pivotal role in human culture, entertainment, and competition. The ancient Olympic Games, dating back to ancient Greece, stand as one of the earliest milestones in sports history, symbolizing the pursuit of excellence and unity among nations. Over the centuries, sports have evolved, giving rise to iconic moments and achievements that captivate audiences worldwide. Landmark events such as Jesse Owens' historic performance at the <mark>1936 Berlin Olympics</mark>, where he defied racial discrimination to win four gold medals, and the Miracle on Ice at the 1980 Winter Olympics, when the underdog US hockey team defeated the powerhouse Soviet Union, remain etched in sports lore. Milestones like Roger Bannister's breaking of the four-minute mile barrier and<mark> Usain Bolt's record-breaking sprints </mark>have pushed the boundaries of human capability and inspired generations of athletes to reach for greatness. With each milestone, sports history continues to inspire, unite, and celebrate the triumph of the human spirit, leaving an indelible mark on the fabric of society.</p>
-<img src="https://th.bing.com/th?id=OIP.PCBC2i5OuCM8tGOoh5qg-gHaC2&amp;w=350&amp;h=134&amp;c=8&amp;rs=1&amp;qlt=90&amp;o=6&amp;dpr=1.3&amp;pid=3.1&amp;rm=2" 
-alt="Sports History" />
-      
-<h6 style="background-color:cyan;">Sports Business and Industry Insights</h6>
-<p>Sports Business and Industry Insights: The sports industry is not only about the action on the field but also encompasses a vast ecosystem of businesses and organizations that drive the global sports economy. From <mark>multi-billion dollar professional leagues</mark> and teams to small local clubs and grassroots initiatives, the sports industry spans a wide range of sectors including broadcasting, sponsorship, merchandising, event management, and sports technology. Behind every thrilling match or championship event lies a complex network of stakeholders, including broadcasters, sponsors, advertisers, venue operators, and sports governing bodies, all working together to deliver memorable experiences to fans around the world. In recent years, advancements in technology and the rise of digital media have transformed the sports landscape, creating new opportunities and challenges for businesses to innovate and adapt. Whether it's negotiating lucrative broadcasting deals, securing sponsorship partnerships, or leveraging data analytics to optimize player performance, the sports business and industry play a pivotal role in shaping the future of sports entertainment and engagement.</p>
-      
-<h7 style="background-color:cyan;">Top 10 International Sports</h7>
-<p><b>1.Football (Soccer):</b>Football is the most popular sport globally, with billions of fans and participants worldwide. It is played in nearly every country and boasts massive international tournaments such as the FIFA World Cup.</p>
-
-<p><b>2.Cricket:</b> Cricket is immensely popular in countries such as India, Pakistan, Australia, England, and the West Indies. It has a large following across Asia, Africa, and parts of Europe, with major international competitions like the ICC Cricket World Cup.</p>
-
-<p><b>3.Basketball:</b> Basketball enjoys widespread popularity, particularly in the United States and countries across Europe and Asia. The NBA (National Basketball Association) is one of the most prestigious basketball leagues globally.</p>
-
-<p><b>4.Tennis:</b>Tennis is a widely played and watched sport, with major tournaments like Wimbledon, the US Open, the French Open, and the Australian Open drawing millions of viewers each year.</p>
-
-<p><b>5.Golf:</b> Golf is popular in many countries, with significant events such as The Masters, the U.S. Open, The Open Championship, and the PGA Championship attracting global attention.</p>
-
-<p><b>6.Rugby: </b>Rugby is particularly popular in countries like New Zealand, Australia, South Africa, England, and France. The Rugby World Cup is one of the most prestigious international rugby tournaments.</p>
-
-<p><b>7.Athletics (Track and Field):</b>Athletics includes a wide range of track and field events such as sprints, long-distance running, jumping, throwing, and racewalking. The Olympic Games feature athletics as one of its marquee events.</p>
-
-<p><b>8.Formula 1:</b> Formula 1 racing is a premier auto racing series that attracts fans from around the world. Races take place on circuits in multiple countries, with the F1 World Championship being the pinnacle of motor racing.</p>
-
-<p><b>9.Swimming:</b>Swimming is a popular sport with international competitions like the Olympics and the FINA World Championships showcasing top swimmers from around the globe.</p>
-
-<p><b>10.Cycling:</b>Cycling encompasses various disciplines such as road cycling, track cycling, mountain biking, and BMX. Major events like the Tour de France and the UCI Road World Championships draw significant attention.</p>
-
-<h8 style="background-color:cyan;">Sports for Kids</h8>
-<p>Sports for kids offer more than just physical activity; they provide a platform for holistic development. Engaging in sports activities from an early age helps children build fundamental skills such as teamwork, discipline, and resilience. Through participation in sports, kids learn valuable lessons about fair play, sportsmanship, and respecting others. Moreover, sports encourage children to lead active lifestyles, promoting physical fitness and overall well-being. Whether it's kicking a soccer ball, swinging a racket, or running on a track, sports activities foster confidence, social interaction, and a sense of achievement in children. By introducing kids to sports, we empower them to discover their passions, develop lifelong healthy habits, and unleash their full potential, both on and off the field.</p>
-<img src="https://cdn.pixabay.com/photo/2017/06/26/19/53/team-2444978_640.jpg "
- alt="Kids Sports" />
-   
-<p> Thank you for visiting our website! We hope you enjoyed exploring our sports content. Whether you're a fan, athlete, or sports enthusiast, we appreciate your support. Don't hesitate to come back soon for more updates, scores, and exciting sports news. Until next time, keep playing, keep cheering, and keep the spirit of sports alive! Have a great day! Powerd By Md Sharek</p>
 </body>
 </html>
